@@ -3,10 +3,38 @@
     padding: 0;
     box-sizing: border-box;
 }
-.web-title{
-    word-spacing: -10px;
-    
+nav{
+    width: 100%;
+    height: auto;
+     background-color: #343a40;
 }
-.word-wrap::first-letter{
+.title{
+    font-family: sans;
+    padding: 3rem;
+}
+.web-title{
+    font-size: 2rem;
+}
+.web-title::first-letter{
     color: brown;
 }
+
+.menu{
+    width: 100%;
+    height: 730px;
+}
+.menu li{
+    font-size: 30px;
+    background: transparent;
+}
+.menu li:hover{
+    font-size: 30px;
+    background-color: transparent;
+}
+.menu li a:hover{
+    background-color: transparent;
+}
+nav button{
+    z-index: 99;
+}
+
