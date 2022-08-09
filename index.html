@@ -11,17 +11,18 @@
 </head>
 
 <body>
-    <header class="">
-        <nav class="d-flex align-content-center justify-content-between navbar navbar-dark bg-dark position-fixed">
-            <div class="title text-white position-relative ">
+    <!-- Nav -->
+    <header>
+        <nav class="align-content-center justify-content-evenly navbar navbar-dark bg-dark position-fixed flex-column ">
+            <div class="title text-white position-absolute">
                 <h1 class="d-inline-block text-capitalize web-title">code</h1>
                 <h1 class="d-inline-block text-capitalize web-title">and</h1>
                 <h1 class="d-inline-block text-capitalize web-title">create</h1>
             </div>
-            <button class="navbar-toggler position-relative" onclick="myfunction()" type="button">
+            <button class="nav-btn navbar-toggler position-absolute " onclick="myfunction()" type="button">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <ul class="menu  navbar-nav p-5 justify-content-center position-absolute" id="menu">
+            <ul class="menu  navbar-nav p-5 justify-content-center align-items-center position-absolute" id="menu">
                 <li class="nav-item  list-unstyled text-center"><a href="home" class="nav-link">Home</a> </li>
                 <li class="li nav-item  list-unstyled text-center"><a href="" class="nav-link">About</a> </li>
                 <li class="li nav-item  list-unstyled text-center"><a href="" class="nav-link">Pricing</a></li>
@@ -30,13 +31,16 @@
             </ul>
         </nav>
     </header>
+    <!--Nav End-->
+    <!--Section 1-->
     <section id="home">
         <div class="container-fluid d-flex justify-content-center align-content-center">
-            <div class="w-50 d-flex flex-column justify-content-center align-content-center text-center text-white position-relative">
-                <div class="h1 text-uppercase">
+            <div class="container-2 d-flex justify-content-center align-content-center text-center text-white">
+                <div class="first-title text-uppercase position-absolute">
                     strategy</div>
-                <p class="h2 text-uppercase">Lorem ipsum dolor</p>
-                <button class="home-btn w-25 bg-danger d-flex flex-column position-absolute"><a href="">Discover Now</a> </button>
+                <p class="second-title text-uppercase position-absolute">Lorem ipsum dolor</p>
+                <button class="home-btn w-25 bg-danger d-flex flex-column position-absolute text-center"><a
+                        href="">Discover Now</a> </button>
             </div>
 
 
@@ -49,7 +53,7 @@
 
 
 
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
     <script src="/bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
 </body>
 

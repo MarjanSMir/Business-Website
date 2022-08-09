@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /*menu header*/
@@ -13,7 +18,11 @@ nav {
     background-color: #141515;
     animation: animateNavbar 1s 0.5s forwards;
     transition: 1s;
-    z-index: 99;
+    z-index: 9;
+}
+
+nav.change {
+    height: 100vh;
 }
 
 @keyframes animateNavbar {
@@ -27,8 +36,10 @@ nav {
 }
 
 .title {
+    top:1rem;
+    left: 0%;
     font-family: sans;
-    padding: 3rem;
+    padding-left: 3rem;
 }
 
 .web-title {
@@ -39,12 +50,15 @@ nav {
     color: brown;
 }
 
-#menu {
+.menu {
     width: 100%;
     height: 700px;
-    top: -1000%;
-    background-color: #141515c9;
-
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    z-index: 99;
 }
 
 .menu li {
@@ -62,15 +76,27 @@ nav {
 }
 
 nav .navbar-toggler {
+    top: 1rem;
+    left: 90%;
     margin-right: 5%;
-    z-index: 9;
+    z-index: 500;
+    transition: 0.5s;
+}
+.change .navbar-toggler{
+    transform: rotate(180deg);
+    color: rgb(227, 100, 100);
 }
 
-nav div {
-    z-index: 99;
+.change .menu{
+    opacity: 1;
+    visibility: visible;
 }
 
 /*section 2 home */
+#home {
+    height: 100vh;
+}
+
 .container-fluid {
     width: 100%;
     height: 760px;
@@ -78,8 +104,26 @@ nav div {
     background-size: cover;
 
 }
-.home-btn{
+
+.container-2 {
+    width: 50%;
+    height: 100px;
+}
+
+.home-btn {
     top: 60%;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
+}
+
+.first-title {
+    font-size: 8rem;
+
+}
+
+.second-title {
+    font-size: 2rem;
+    width: 60%;
+    background-color: #141515bd;
+
 }
