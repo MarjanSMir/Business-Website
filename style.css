@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     outline: none;
 }
 
@@ -38,7 +39,7 @@ nav.change {
 .title{
     top:1rem;
     left: 0%;
-    font-family: sans;
+    font-family:serif !important;
     padding-left: 3rem;
 }
 
@@ -117,7 +118,7 @@ nav .navbar-toggler {
 }
 .title-2  span{
     font-size: 5rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
     position: absolute;
     transform: translate(-50%,0);
     opacity: 0;
@@ -212,3 +213,37 @@ nav .navbar-toggler {
       visibility: visible;
     }
   } 
+/*section 3 About us */
+#aboutUs{
+    width: 100%;
+    height: 100vh;
+    background-color: #222020;
+}
+.header-2{
+    font-size: 5rem;
+    font-weight: lighter;
+    font-family: "Oswald", sans-serif;
+    color: rgb(211, 211, 211);
+}
+.line-2{
+    width: 20%;
+    height: 2px;
+    background-color: rgb(211, 211, 211);
+    margin-bottom: 10%;
+}
+.container-4{
+
+}
+
+.para2{
+    color: rgb(211, 211, 211);
+    font-size: 1rem;
+    text-align: justify;
+    
+}
+.para2 i{
+    font-size: 3rem;
+}
+.para2 .icon-2{
+    margin-left: 93%;
+}
