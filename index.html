@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+
 </head>
 
 <body>
@@ -50,7 +53,7 @@
         </div>
     </section>
 
-    <!---Section 2-->
+    <!---Section 2 About us-->
     <section id="aboutUs" class="d-flex flex-row align-content-center">
         <div class="container-3 w-40 h-100 d-flex justify-content-center align-content-center align-items-center">
             <h2 class="header-2"><span>About Us</span></h2>
@@ -58,12 +61,16 @@
         </div>
         <div class="container-4 w-60 d-flex flex-column justify-content-center align-content-center p-5">
             <video width="800px" height="400px" controls>
-                <source src="/images/about-us-video.mp4" type="video/mp4">
+                <source src="images/about-us-video.mp4" type="video/mp4">
             </video>
             <div class="para2 mt-3">
                 <hr>
                 <i class="fas fa-quote-left"></i>
-                <p class="p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint esse quas iusto amet et aspernatur impedit eius quo, explicabo numquam exercitationem saepe, iste illo ut ipsa molestias reprehenderit est vitae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nesciunt esse asperiores placeat pariatur mollitia animi alias praesentium veritatis assumenda, distinctio aperiam excepturi debitis, vitae fugit facere voluptas quaerat at!</p>
+                <p class="p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint esse quas iusto amet et
+                    aspernatur impedit eius quo, explicabo numquam exercitationem saepe, iste illo ut ipsa molestias
+                    reprehenderit est vitae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem nesciunt
+                    esse asperiores placeat pariatur mollitia animi alias praesentium veritatis assumenda, distinctio
+                    aperiam excepturi debitis, vitae fugit facere voluptas quaerat at!</p>
                 <i class="fas fa-quote-right  icon-2"></i>
                 <hr class="">
             </div>
@@ -71,13 +78,40 @@
         </div>
 
     </section>
+    <!--Section 3 Pricing-->
+    <section id="pricing" class="d-flex flex-row align-items-center justify-content-between">
+        <div class="container-4 w-40 h-100 d-flex justify-content-center align-content-center align-items-center">
+            <h2 class="header-2"><span>Pricing</span></h2>
+            <span class="line-2 m-3 mb-4"></span>
+        </div>
+        <div class="swiper myswiper card-wrapper w-100 h-100 position-absolute">
+            <div
+                class="card-container d-flex justify-content-around align-items-center w-100 h-100 swiper-wrapper">
+                <div
+                    class="card card-1 text-capitalize align-items-center d-flex justify-content-center align-items-center swiper-slide">
+                    <span class="text-white h3">order now</span></div>
+                <div
+                    class="card card-2 text-capitalize align-items-center d-flex justify-content-center align-items-center swiper-slide">
+                    <span class="text-white h3">order now</span></div>
+                <div
+                    class="card card-3 text-capitalize align-items-center d-flex justify-content-center align-items-center swiper-slide">
+                    <span class="text-white h3">order now</span></div>
+                <div
+                    class="card card-4 text-capitalize align-items-center d-flex justify-content-center align-items-center swiper-slide">
+                    <span class="text-white h3">order now</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!--section 4 Contact-->
 
 
 
-
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="/bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
+  
+
 </body>
 
 </html>

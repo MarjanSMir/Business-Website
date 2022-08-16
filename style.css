@@ -10,7 +10,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/*menu header*/
+/*menu header - section 1*/
 
 
 .nav {
@@ -96,11 +96,11 @@ nav .navbar-toggler {
     visibility: visible;
 }
 
-/*section 2 home */
+/*section 1 home */
 #home {
     width: 100%;
     height: 100vh;
-    background-image: url(/images/dark-bg.jpeg);
+    background-image: url(images/dark-bg.jpeg);
     background-size: cover;
 }
 
@@ -118,7 +118,6 @@ nav .navbar-toggler {
 }
 .title-2  span{
     font-size: 5rem;
-    
     position: absolute;
     transform: translate(-50%,0);
     opacity: 0;
@@ -213,7 +212,7 @@ nav .navbar-toggler {
       visibility: visible;
     }
   } 
-/*section 3 About us */
+/*section 2 About us */
 #aboutUs{
     width: 100%;
     height: 100vh;
@@ -231,9 +230,7 @@ nav .navbar-toggler {
     background-color: rgb(211, 211, 211);
     margin-bottom: 10%;
 }
-.container-4{
 
-}
 
 .para2{
     color: rgb(211, 211, 211);
@@ -246,4 +243,35 @@ nav .navbar-toggler {
 }
 .para2 .icon-2{
     margin-left: 93%;
+}
+
+/*section 4 Pricing */
+#pricing{
+    width: 100%;
+    height: 100vh;
+    background-color: #03070e;
+
+
+}
+.container-4{
+    margin-left: 3%;
+}
+.card-container>.card{
+    border-radius: 5%;
+}
+.card{
+    width: 260px !important;
+    height: 60% !important; 
+}
+.card-1{
+    background: linear-gradient(to right, #087285, #0da5d3);
+}
+.card-2{
+    background: linear-gradient(to right, #946809, #bdba0e);
+}
+.card-3{
+    background: linear-gradient(to right, #a10c14, #e23b3b);
+}
+.card-4{
+    background: linear-gradient(to right, #0b7e48, #3be286);
 }
