@@ -348,3 +348,16 @@ nav .navbar-toggler {
     background-color: brown;
     height: 60px;
 }
+
+/*Footer*/
+#footer{
+    height: 15vh;
+    background-color: #03070e;
+}
+#footer> ul> li>a, #footer >span{
+    color: rgb(211, 211, 211);
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: serif !important;
+
+}
