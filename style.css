@@ -36,10 +36,10 @@ nav.change {
     }
 }
 
-.title{
-    top:1rem;
+.title {
+    top: 1rem;
     left: 0%;
-    font-family:serif !important;
+    font-family: serif !important;
     padding-left: 3rem;
 }
 
@@ -62,7 +62,7 @@ nav.change {
     z-index: 99;
     transition: 1s;
     transition-delay: 1s;
-   
+
 }
 
 .menu li {
@@ -86,12 +86,13 @@ nav .navbar-toggler {
     z-index: 500;
     transition: 0.5s;
 }
-.change .navbar-toggler{
+
+.change .navbar-toggler {
     transform: rotate(180deg);
     color: rgb(227, 100, 100);
 }
 
-.change .menu{
+.change .menu {
     opacity: 1;
     visibility: visible;
 }
@@ -105,59 +106,71 @@ nav .navbar-toggler {
 }
 
 .container-2 {
-    width:70vw;
+    width: 70vw;
     height: 70vh;
     top: 10rem;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
 }
-.title-2{
+
+.title-2 {
     animation: changing;
     width: 100%;
 
 }
-.title-2  span{
+
+.title-2 span {
     font-size: 5rem;
     position: absolute;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
     opacity: 0;
     letter-spacing: 1rem;
     transition: 1s;
-    text-shadow: 5px 5px 5px brown ;
+    text-shadow: 5px 5px 5px brown;
 
 }
-.heading-1{
+
+.heading-1 {
     animation: changing 12s 3s infinite;
 }
-.heading-2{
+
+.heading-2 {
     animation: changing 12s 6s infinite;
 }
-.heading-3{
-    animation:changing 12s 9s infinite ;
+
+.heading-3 {
+    animation: changing 12s 9s infinite;
 }
-.heading-4{
+
+.heading-4 {
     animation: changing 12s 12s infinite;
 }
-@keyframes changing{
-    0%{
+
+@keyframes changing {
+    0% {
         opacity: 0;
     }
-    3%{
+
+    3% {
         opacity: 1;
     }
-    25%{
+
+    25% {
         opacity: 1;
     }
-    28%{
+
+    28% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 0;
     }
 }
-.para1{
+
+.para1 {
     top: 50%;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
     font-size: 2.5rem;
     background-color: rgba(0, 0, 0, 0.571);
     padding: 1rem;
@@ -165,7 +178,8 @@ nav .navbar-toggler {
     visibility: hidden;
     animation: fadeAnimation 1s 1.5s forwards;
 }
-.home-btn{
+
+.home-btn {
     width: 23%;
     height: 3.5rem;
     top: 75%;
@@ -177,15 +191,18 @@ nav .navbar-toggler {
     visibility: hidden;
     animation: fadeAnimation 1s 2s forwards;
 }
-.home-btn a{
+
+.home-btn a {
     color: white;
     text-decoration: none;
     font-size: 1.3rem;
     text-shadow: 0.2rem 0.1rem 2px black;
 }
-.home-btn a:hover{
+
+.home-btn a:hover {
     color: white;
 }
+
 .home-btn::before {
     content: "";
     width: 100%;
@@ -196,35 +213,40 @@ nav .navbar-toggler {
     left: -100%;
     transform: skewX(-30deg);
     transition: left 0.5s;
-  }
-  
+}
+
 .home-btn:hover::before {
     left: 100%;
 }
 
 @keyframes fadeAnimation {
     0% {
-      opacity: 0;
-      visibility: hidden;
+        opacity: 0;
+        visibility: hidden;
     }
+
     100% {
-      opacity: 1;
-      visibility: visible;
+        opacity: 1;
+        visibility: visible;
     }
-  } 
+}
+
 /*section 2 About us */
-#aboutUs{
+#aboutUs,
+#contact {
     width: 100%;
     height: 100vh;
     background-color: #222020;
 }
-.header-2{
+
+.header-2 {
     font-size: 5rem;
     font-weight: lighter;
     font-family: "Oswald", sans-serif;
     color: rgb(211, 211, 211);
 }
-.line-2{
+
+.line-2 {
     width: 20%;
     height: 2px;
     background-color: rgb(211, 211, 211);
@@ -232,46 +254,97 @@ nav .navbar-toggler {
 }
 
 
-.para2{
+.para2 {
     color: rgb(211, 211, 211);
     font-size: 1rem;
     text-align: justify;
-    
+
 }
-.para2 i{
+
+.para2 i {
     font-size: 3rem;
 }
-.para2 .icon-2{
+
+.para2 .icon-2 {
     margin-left: 93%;
 }
 
-/*section 4 Pricing */
-#pricing{
+/*section 3 Pricing */
+#pricing {
     width: 100%;
     height: 100vh;
     background-color: #03070e;
-
-
 }
-.container-4{
-    margin-left: 3%;
-}
-.card-container>.card{
+
+.card-container>.card {
     border-radius: 5%;
 }
-.card{
+
+.card {
     width: 260px !important;
-    height: 60% !important; 
+    height: 60% !important;
+    font-family: "Oswald", sans-serif;
 }
-.card-1{
+
+.card-1 {
     background: linear-gradient(to right, #087285, #0da5d3);
 }
-.card-2{
+
+.card-2 {
     background: linear-gradient(to right, #946809, #bdba0e);
 }
-.card-3{
+
+.card-3 {
     background: linear-gradient(to right, #a10c14, #e23b3b);
 }
-.card-4{
+
+.card-4 {
     background: linear-gradient(to right, #0b7e48, #3be286);
+}
+
+/*section 4 contact*/
+.contact-1 {
+    height: 35vh;
+    font-family: "Oswald", sans-serif;
+    color: rgb(211, 211, 211);
+}
+
+.contact-2 {
+    height: 65vh;
+}
+
+.phone,
+.address,
+.email {
+    width: 10%;
+}
+
+.phone>i,
+.address>i,
+.email>i {
+    color: brown
+}
+
+.contact-2 {
+    color: rgb(211, 211, 211);
+}
+
+.container-4>form>input,
+.container-4>form>textarea {
+    background-color: #444242;
+    padding: 3%;
+    color: rgb(211, 211, 211);
+    margin: 0.5%;
+}
+.container-4>form>textarea{
+    resize: both;
+    max-width: 100%;
+}
+
+.container-4>form>input {
+    height: 40px;
+}
+.container-4>form>input[type=button] {
+    background-color: brown;
+    height: 60px;
 }
