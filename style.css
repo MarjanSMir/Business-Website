@@ -10,9 +10,48 @@ html {
     scroll-behavior: smooth;
 }
 
+/* display-flex*/
+.container-2,
+.aboutus,
+.container-3,
+.video-wrapper,
+.pricing,
+.card-container,
+.card,
+.contact,
+.contact-1,
+.phone,
+.address,
+.email,
+.contact-2,
+.container-4,
+.contact-form,
+.footer {
+    display: flex;
+}
+
+nav,
+.video-wrapper,
+.contact,
+.phone,
+.email,
+.address,
+.container-4,
+.contact-form {
+    flex-direction: column;
+}
+
+/* width */
+.container-3 {
+    width: 40%;
+}
+
+.video-wrapper,
+.container-4 {
+    width: 60%;
+}
+
 /*menu header - section 1*/
-
-
 .nav {
     width: 100%;
     height: 80px;
@@ -127,7 +166,6 @@ nav .navbar-toggler {
     letter-spacing: 1rem;
     transition: 1s;
     text-shadow: 5px 5px 5px brown;
-
 }
 
 .heading-1 {
@@ -258,7 +296,6 @@ nav .navbar-toggler {
     color: rgb(211, 211, 211);
     font-size: 1rem;
     text-align: justify;
-
 }
 
 .para2 i {
@@ -322,7 +359,7 @@ nav .navbar-toggler {
 .phone>i,
 .address>i,
 .email>i {
-    color: brown
+    color: brown;
 }
 
 .contact-2 {
@@ -336,7 +373,8 @@ nav .navbar-toggler {
     color: rgb(211, 211, 211);
     margin: 0.5%;
 }
-.container-4>form>textarea{
+
+.container-4>form>textarea {
     resize: both;
     max-width: 100%;
 }
@@ -344,20 +382,173 @@ nav .navbar-toggler {
 .container-4>form>input {
     height: 40px;
 }
+
 .container-4>form>input[type=button] {
     background-color: brown;
     height: 60px;
 }
 
 /*Footer*/
-#footer{
+#footer {
     height: 15vh;
     background-color: #03070e;
 }
-#footer> ul> li>a, #footer >span{
+
+#footer>ul>li>a,
+#footer>span {
     color: rgb(211, 211, 211);
     text-decoration: none;
     font-size: 1.3rem;
     font-family: serif !important;
+}
 
+/*responsive*/
+@media screen and (max-width:767px) {
+    .title-2 span {
+        font-size: 3rem;
+    }
+
+    .para1 {
+        font-size: 2rem;
+    }
+
+    .home-btn {
+        width: 50%;
+        height: 3.5rem;
+    }
+
+    .aboutus,
+    .pricing,
+    .contact,
+    .contact-2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-3 {
+        width: 100%;
+    }
+
+    .video-wrapper,
+    .container-4 {
+        width: 100%;
+    }
+
+    .header-2 {
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+
+    .line-2 {
+        display: none;
+    }
+
+    video {
+        width: 90%;
+        height: 200px;
+    }
+
+    .pricing-wrapper {
+        position: absolute;
+        top: -40%;
+    }
+
+    .phone,
+    .email,
+    .address {
+        font-size: 0.2rem;
+    }
+
+    .contact-2 {
+        padding: 10%;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer>ul,
+    .footer>span {
+        margin: 0 !important;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .title-2 span {
+        font-size: 3.5rem;
+    }
+
+    .para1 {
+        font-size: 2rem;
+    }
+
+    .home-btn {
+        width: 50%;
+        height: 3.5rem;
+    }
+
+    .aboutus,
+    .pricing,
+    .contact,
+    .contact-2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-3 {
+        width: 100%;
+    }
+
+    .video-wrapper,
+    .container-4 {
+        width: 100%;
+    }
+
+    .header-2 {
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+
+    .line-2 {
+        display: none;
+    }
+
+    video {
+        width: 90%;
+        height: 200px;
+    }
+
+    .pricing-wrapper {
+        position: absolute;
+        top: -40%;
+    }
+
+    .phone,
+    .email,
+    .address {
+        font-size: 0.2rem;
+    }
+
+    .contact-2 {
+        padding: 10%;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer>ul,
+    .footer>span {
+        margin: 0 !important;
+    }
+}
+
+@media screen and (min-width:993px) and (max-width:1200px) {
+    video {
+        width: 90%;
+        height: 300px;
+    }
 }
